@@ -43,7 +43,7 @@ window.addEventListener("resize", () => {
   size.width = window.innerWidth;
   size.height = window.innerHeight;
 
-  camera.aspect = window.width / window.height;
+  camera.aspect = size.width / size.height;
   camera.updateProjectionMatrix();
 
   renderer.setSize(size.width, size.height);
