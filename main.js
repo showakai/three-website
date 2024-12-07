@@ -124,8 +124,8 @@ document.body.onscroll = () => {
 };
 
 const tick = () => {
-  window.requestAnimationFrame(tick);
   playScrollAnimation();
   renderer.render(scene, camera);
+  window.requestAnimationFrame(tick);
 };
 tick();
