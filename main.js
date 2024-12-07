@@ -79,14 +79,7 @@ animationScripts.push({
     box.rotation.z = lerp(1, Math.PI, scalePercent(40, 60));
   },
 });
-animationScripts.push({
-  start: 60,
-  end: 80,
-  play() {
-    camera.lookAt(box.position);
-    camera.position.x = lerp(0, -15, scalePercent(60, 80));
-  },
-});
+
 animationScripts.push({
   start: 60,
   end: 80,
@@ -99,7 +92,7 @@ animationScripts.push({
 });
 animationScripts.push({
   start: 80,
-  end: 10,
+  end: 100,
   play() {
     camera.lookAt(box.position);
     box.rotation.x += 0.02;
